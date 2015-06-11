@@ -1,0 +1,30 @@
+About electron profile files:
+The first column is height in km, the second is the electron density
+in cm^(-3). About the meaning and origin of particular files:
+
+eprof0.dat - "tenuous profile"
+
+eprof1.dat - ?
+
+eprof2.dat - ?
+
+eprof3.dat - ?
+
+eprof5.dat - ? sth connected with Hale.
+
+tenuous.dat - 
+The nighttime profile from Sean, 4/7/99, obtained for simulation of
+the ionosphere modification by the GRB of August 27, 1998.
+
+nighttime.dat - 
+Nighttime. Same as sean.dat
+
+daytime.dat -
+Daytime from Sean, 4/17/99
+
+sean.dat -
+Nighttime profile, but with more ionization than in "tenuous.dat"
+
+sean125.dat -
+Profile obtained by weighting 0.125*sean.dat+0.875*tenuous.dat
+

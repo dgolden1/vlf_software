@@ -1,0 +1,80 @@
+[x,y] = meshgrid([-pi:.01:pi],[-pi:.01:pi]);
+%[x,y] = meshgrid([-pi:.1:pi],[-pi:.1:pi]);
+
+% May need this option.  
+%opengl neverselect
+%opengl software
+
+n=0;
+az=-45.25;
+el=30.25;
+for t=0:.1:40;
+f=sin(x.^2+y.^2-t);
+%imagesc(f); caxis([-1 1])
+disp(sprintf('n=%d',n));
+surf(x,y,f); caxis([-1 1]); colormap(jet(256));
+alpha(.7);
+view(az,el);
+set(gcf, 'InvertHardCopy', 'off');
+set(gcf,'Color','black'); 
+set(gca,'Color','black');
+set(gca,'ZColor','white'); 
+set(gca,'YColor','white'); 
+set(gca,'XColor','white');
+
+set(gca,'LineWidth',2)
+set(gca,'GridLineStyle','--')
+set(gca,'Projection','Perspective')
+
+pbaspect('manual');
+pbaspect([1 1 .5]);
+
+if( n == 0 )
+  axis tight;
+  ax = axis;
+
+  viewangle = get(gca,'CameraViewAngle');
+  set(gca,'CameraViewAngleMode','manual');
+%  set(gca,'CameraViewAngle',viewangle*1);
+
+  xtck = get(gca,'XTick');
+  ytck = get(gca,'YTick');
+  ztck = get(gca,'ZTick');
+  set(gca,'XTickMode','manual');
+  set(gca,'YTickMode','manual');
+  set(gca,'ZTickMode','manual');
+%  set(gca,'XTick',xtck);
+%  set(gca,'YTick',ytck);
+%  set(gca,'ZTick',ztck);
+
+  cameratarget = get(gca,'CameraTarget');
+  set(gca,'CameraTargetMode','manual');
+%  set(gca,'CameraTarget',cameratarget);
+else
+  axis(ax);
+  set(gca,'CameraViewAngleMode','manual');
+  set(gca,'CameraViewAngle',viewangle*1);
+  
+  set(gca,'XTickMode','manual');
+  set(gca,'YTickMode','manual');
+  set(gca,'ZTickMode','manual');
+  set(gca,'XTick',xtck);
+  set(gca,'YTick',ytck);
+  set(gca,'ZTick',ztck);
+
+  set(gca,'CameraTargetMode','manual');
+  set(gca,'CameraTarget',cameratarget);
+end;
+
+shading interp
+
+% Don't use opengl renderer for eps
+%print('-depsc', sprintf('out/out%0.5d.eps',n),'-zbuffer');
+%print('-depsc',sprintf('out/out%0.5d.eps',n),'-painters');
+print('-dpng', '-r150', sprintf('out/out%0.5d.png',n),'-opengl');
+n = n+1;
+az = az + 1;
+%el = el + .5;
+end;
+
+

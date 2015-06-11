@@ -1,0 +1,4 @@
+       Time            GEO        Radius 
+yyyy ddd hh.hhhhh   Lat   Long     (RE) 
+
+Use Lat(-90,+90),Long(0,360)

@@ -1,0 +1,63 @@
+$Id: new_data_workflow.txt 1520 2012-04-20 23:37:58Z dgolden $
+
+New Data Workflow
+
+*** NEW DATA FROM WEN LI***
+
+1. Put it in the right folders on scott at data/spacecraft/themis/level3/density
+2. Run batch_collect_dens_data.m. This will turn the density data into .mat files in the case_studies/themis_emissions/derived_densities directory
+3. Resample the density data onto SCM epochs using resample_densities_onto_scm_epochs.m. This will put _dens_common files in case_studies/themis_emissions/fb_scm1
+4. If necessary, recombine the THEMIS and Polar data using themis_polar/combine_them_polar.m.
+
+
+*** TO GET NEW DFB DATA, DO THIS ***
+o Go to ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/l2/fbk/
+o Download all the junk into scott/spacecraft/themis/level2/dfb/tha
+o Repeat for other probes
+
+Here's a quick way to use the Linux FTP command to do all this.
+Log into scott
+cd /data/spacecraft/themis/level2/dfb/tha
+mkdir 2011
+cd 2011
+ftp cdaweb.gsfc.nasa.gov
+username: anonymous
+password: dgolden1@stanford.edu
+prompt
+cd /pub/istp/themis/tha/l2/fbk/2011/
+mget *.cdf
+
+Repeat for other years and probes using "cd" (remote change dir), "lcd" (local change dir), "!" (run command on local computer)
+
+
+*** IF YOU GET NEW DFB DATA, DO THIS ***
+
+o Stuff the data on scott
+o Run batch_collect_dfb_data.m
+o Run batch_clean_dfb.m
+o Run resample_densities_onto_scm_epochs.m
+
+*** IF YOU GET NEW QD DATA ***
+o Update ae_1min.mat
+o resample_qd_data.m
+o Download new ASY_SYM data and run asy_sym_collect_files.m
+
+*** TO GET NEW EPHEMERIS DATA ***
+YES
+o ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/ssc
+o Download CDFs to /media/scott/spacecraft/themis/ephemeris/cdf/tha
+o Repeat for other SCs
+o Run batch_collect_ephemeris.m
+
+NO
+o Go to http://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi
+o Choose THEMIS, start time 2007 001, end time, 2012 001 (or whatever)
+o Points are every minute. In the past, I've done 1 out of every 60 points (one hour), which is a little over 1 MB/SC/year. 1 out of every 10 points would be fine too.
+o Copy and paste into text files
+
+*** TO RE-RUN THE CHORUS MODEL ***
+
+o combine_them_polar.m
+o select_and_save_features.m
+o per_bin_regress_them_polar.m
+o make_chorus_hiss_wave_map_movie.m

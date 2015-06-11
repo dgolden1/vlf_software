@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:cce="http://www.ibm.com"
+ xmlns:fn="http://www.w3.org/2005/02/xpath-functions"
+ xmlns:str="http://exslt.org/strings"
+ xmlns:java="http://xml.apache.org/xalan/java">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>10.6735</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <DownloadComponents/>
+  <LocationOfComponents HRef="file:///C:\i387\"/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m26348476">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="m26363544">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="m26363554">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m26363564">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="m26363574">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s21">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s25">
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-1009]mmmm\ d\,\ yyyy"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s46">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s47">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s48">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s49">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s56">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s57">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s58">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#3366FF"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s59">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#3366FF"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s60">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#3366FF"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s61">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#3366FF" ss:Bold="1"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:Indent="1" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#FF6600" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss" ss:Color="#FF6600" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial Narrow" x:Family="Swiss"/>
+   <NumberFormat/>
+   <Protection ss:Protected="0"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="45" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="121.5"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="279.75"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="53.25"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="84.75"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="72.75"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="84.75"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:StyleID="s21" ss:AutoFitWidth="0" ss:Width="72.75"/>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Quote name</Data></Cell>
+    <Cell><Data ss:Type="String">145041648</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Confirmation number</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">145041648</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Last modified</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">July 30, 2008 5:15:09 PM MST</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Expires</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">September 28, 2008</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Prepared for</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Dan Golden</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:StyleID="s28">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Sales representative contact</Data></Cell>
+    <Cell><Data ss:Type="String">Lenny Holstad&#10;Primary phone: 1-800-656-0833 x6140&#10;Primary e-mail: lholstad@us.ibm.com</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s28">
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.75" ss:StyleID="s28">
+    <Cell ss:MergeDown="1" ss:StyleID="m26363544"><Data ss:Type="String">Part Number</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m26363554"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m26363564"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m26363574"><Data ss:Type="String">Approved</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.75" ss:StyleID="s28">
+    <Cell ss:Index="4" ss:StyleID="s46"><Data ss:Type="String">Component Price</Data></Cell>
+    <Cell ss:StyleID="s46"><Data ss:Type="String">Line/Configuration</Data></Cell>
+    <Cell ss:StyleID="s46"><Data ss:Type="String">Total Price</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="46.5" ss:StyleID="s28">
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s48"/>
+    <Cell ss:StyleID="s49"/>
+    <Cell ss:StyleID="s49"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">(per configuration unit)</Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">(Quantity x Config unit price)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="1" ss:StyleID="m26348476"><Data ss:Type="String">Configuration for:IBM System x3650</Data></Cell>
+    <Cell ss:StyleID="s56"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s57"/>
+    <Cell ss:StyleID="s57"><Data ss:Type="Number">6274.04</Data></Cell>
+    <Cell ss:StyleID="s57"><Data ss:Type="Number">6274.04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"><Data ss:Type="String">7979AC1</Data></Cell>
+    <Cell ss:StyleID="s59"><Data ss:Type="String">IBM System x3650</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s61"><Data ss:Type="Number">5770.04</Data></Cell>
+    <Cell ss:StyleID="s61"><Data ss:Type="Number">5770.04</Data></Cell>
+    <Cell ss:StyleID="s61"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2465  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">3.5&quot; SAS Hot-Swap Enabled System</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2685  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RF2 system Planar</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2750  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Box level code RF2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2817  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Quad-Core Intel Xeon Processor X5355 (2.66GHz 8MB L2 1333MHz 120w)</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">3458  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Addl Quad-Core Intel Xeon Processor X5355 (2.66GHz 1333MHz 120w)</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">3565  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2U Bracket for QLogic 4-Gbps FC Single-Port PCI-E HBA</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0544  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2GB  PC2-5300 CL5 ECC DDR2 Chipkill FBDIMM 667MHz</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0773  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">System Packaging - WW</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0879  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">3.5&quot; HDD Filler Bezel</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0975  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Rack Kit</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0977  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">3.5&quot; SAS Bay support kit</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0979  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Cooling Fan Asm.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">5</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">1186  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Base</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">1670  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">IBM ServeRAID-8k SAS Controller</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">1968  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">xSeries 835W Redundant Power Option</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2005  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Entry Cable Management Arm</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">3567  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">QLogic 4Gb FC Single-Port PCIe HBA for IBM System x</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">4144  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CD-RW/DVD Combo V Ultrabay Enhanced</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">4334  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PCI-Express Riser card</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">5162  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">146GB 15K 3.5&quot; Hot-Swap SAS</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">6311  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2.8m, 10A/100-250V, C13 to IEC 320-C14 Rack Power Cable</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">8294  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">System Documentation and Software  -  US English</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">9067  </Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Internal SAS RAID - Setup by Customer</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"><Data ss:Type="String">6756025</Data></Cell>
+    <Cell ss:StyleID="s59"><Data ss:Type="String">3 Year Onsite Repair 24x7 4 Hour Response</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s61"><Data ss:Type="Number">504</Data></Cell>
+    <Cell ss:StyleID="s61"><Data ss:Type="Number">504</Data></Cell>
+    <Cell ss:StyleID="s61"/>
+   </Row>
+   <Row ss:StyleID="s28">
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Total before savings</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">9212</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Your savings</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">2937.96</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Subtotal</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">6274.04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Total</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">6274.04</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s28">
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:StyleID="s28">
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:StyleID="s28">
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="58.5">
+    <Cell ss:MergeAcross="1" ss:StyleID="s74"><Data ss:Type="String">Tax, shipping and fees will be recalculated upon completing order. Unless a future delivery date is indicated on your PO, your product will be shipped immediately upon completion of the order in manufacturing. You will be notified if the order is delayed beyond the scheduled availability date. These values are used for estimate purposes only. This quote is valid only for products available through IBM at time of order.</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+     <RangeSelection>R8C2:R9C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
